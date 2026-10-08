@@ -1,0 +1,813 @@
+/* =========================================================
+   PAGE — L'ÉGLISE
+   ========================================================= */
+
+.church-page {
+  overflow: hidden;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.church-hero {
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(212, 166, 42, 0.1),
+      transparent 32%
+    ),
+    var(--bg-main);
+}
+
+.church-hero-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.church-hero h1 {
+  max-width: 760px;
+  margin: 18px 0 28px;
+  font-size: clamp(3.2rem, 7vw, 6.8rem);
+  line-height: 0.94;
+  letter-spacing: -0.055em;
+  font-weight: 500;
+}
+
+.church-hero-text {
+  max-width: 600px;
+  margin: 0 0 34px;
+  color: var(--text-muted);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.church-introduction {
+  background: var(--bg-secondary);
+}
+
+.church-introduction-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 80px;
+  align-items: start;
+}
+
+.church-introduction h2 {
+  max-width: 620px;
+  margin: 18px 0 0;
+  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  font-weight: 500;
+}
+
+.church-introduction-content {
+  max-width: 580px;
+  padding-top: 48px;
+}
+
+.church-introduction-content .section-text + .section-text {
+  margin-top: 24px;
+}
+
+/* =========================================================
+   CE QUE NOUS CROYONS
+   ========================================================= */
+
+.church-beliefs {
+  padding: 120px 0;
+  background: var(--dark-section);
+  color: #f4f0e8;
+}
+
+.church-beliefs-grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 80px;
+}
+
+.church-beliefs .eyebrow {
+  color: var(--gold-light);
+}
+
+.church-beliefs-content {
+  max-width: 760px;
+}
+
+.church-beliefs-content h2 {
+  margin: 0 0 30px;
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+  font-weight: 500;
+}
+
+.church-beliefs-content p {
+  max-width: 650px;
+  margin: 0;
+  color: rgba(244, 240, 232, 0.72);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.church-beliefs-content p + p {
+  margin-top: 22px;
+  font-size: 0.95rem;
+  color: rgba(244, 240, 232, 0.48);
+}
+
+/* =========================================================
+   VISION
+   ========================================================= */
+
+.church-vision {
+  background: var(--bg-main);
+}
+
+.church-vision-grid {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 70px;
+  align-items: start;
+}
+
+.church-vision-number {
+  padding-top: 8px;
+  color: var(--gold);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+
+.church-vision h2 {
+  max-width: 800px;
+  margin: 18px 0 28px;
+  font-size: clamp(2.4rem, 5vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+
+.church-vision .section-text {
+  max-width: 650px;
+}
+
+/* =========================================================
+   VIE DE L'ÉGLISE
+   ========================================================= */
+
+.church-life-preview {
+  padding: 110px 0;
+  background: var(--bg-secondary);
+}
+
+.church-life-preview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 80px;
+  align-items: start;
+}
+
+.church-life-preview h2 {
+  max-width: 620px;
+  margin: 18px 0 0;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+
+.church-schedule-preview {
+  border-top: 1px solid var(--border-light);
+}
+
+.schedule-item {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.schedule-day {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--gold);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.schedule-item strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.schedule-item p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition:
+    color 250ms ease,
+    gap 250ms ease;
+}
+
+.text-link:hover {
+  color: var(--gold);
+  gap: 18px;
+}
+
+/* =========================================================
+   RESPONSABLES
+   ========================================================= */
+
+.church-leaders {
+  background: var(--bg-main);
+}
+
+.church-leaders-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.65fr);
+  gap: 70px;
+  align-items: end;
+  margin-bottom: 52px;
+}
+
+.church-leaders-heading h2 {
+  max-width: 720px;
+  margin: 18px 0 0;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+
+.church-leaders-heading .section-text {
+  margin-bottom: 4px;
+}
+
+/* Horizontal scroll */
+
+.departments-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 8px 4px 24px;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) transparent;
+}
+
+.departments-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+.departments-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.departments-scroll::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 999px;
+}
+
+.department-card {
+  flex: 0 0 min(420px, 82vw);
+  min-height: 390px;
+  padding: 30px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  scroll-snap-align: start;
+  transition:
+    border-color 300ms ease,
+    transform 300ms ease;
+}
+
+.department-card:hover {
+  border-color: rgba(212, 166, 42, 0.45);
+  transform: translateY(-4px);
+}
+
+.department-card-header {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.department-card-header span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--gold);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.department-card-header h3 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+}
+
+.department-members {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  padding-top: 24px;
+}
+
+.department-person {
+  min-width: 0;
+}
+
+.leader-photo,
+.leader-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 16px;
+  background: var(--bg-secondary);
+}
+
+.leader-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--border-light);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.person-role {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--gold);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.department-person strong {
+  display: block;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.scroll-hint {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 0 0;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+}
+
+.scroll-hint span {
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+/* =========================================================
+   NOUS TROUVER
+   ========================================================= */
+
+.church-location {
+  padding: 120px 0;
+  background: var(--bg-secondary);
+}
+
+.church-location-header {
+  max-width: 850px;
+}
+
+.church-location-header h2 {
+  max-width: 800px;
+  margin: 18px 0 0;
+  font-size: clamp(2.6rem, 5vw, 5rem);
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+
+.church-location-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 80px;
+  margin-top: 70px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border-light);
+}
+
+.location-column {
+  min-width: 0;
+}
+
+.location-label {
+  display: block;
+  margin-bottom: 24px;
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+}
+
+.location-address {
+  display: block;
+  color: var(--text-main);
+  font-family:
+    "Playfair Display",
+    serif;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.location-floor-note {
+  margin-top: 38px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.location-floor-note span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--red);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.location-floor-note p {
+  max-width: 430px;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   RENDEZ-VOUS
+   ========================================================= */
+
+.location-service {
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.location-service:last-child {
+  margin-bottom: 0;
+}
+
+.location-service strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-main);
+  font-family:
+    "Playfair Display",
+    serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+
+.location-service > span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--gold);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.location-service p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   ACTIONS — CONTACT / GOOGLE MAPS
+   ========================================================= */
+
+.church-location-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 50px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border-light);
+}
+
+.church-location-actions .button {
+  flex-shrink: 0;
+  width: auto;
+}
+
+.location-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.location-map-link span {
+  font-size: 0.95rem;
+}
+
+.location-map-link:hover {
+  color: var(--gold);
+  transform: translateX(2px);
+}
+
+/* =========================================================
+   INVITATION
+   ========================================================= */
+
+.church-invitation {
+  padding: 150px 0;
+  background: var(--dark-section);
+  color: #f4f0e8;
+  text-align: center;
+}
+
+.church-invitation-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.church-invitation .eyebrow {
+  color: var(--gold-light);
+}
+
+.church-invitation h2 {
+  margin: 18px 0 24px;
+  font-size: clamp(3rem, 7vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+  font-weight: 500;
+}
+
+.church-invitation p:not(.eyebrow) {
+  max-width: 600px;
+  margin: 0 auto 34px;
+  color: rgba(244, 240, 232, 0.68);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.button-light {
+  background: #f4f0e8;
+  color: #171717;
+}
+
+.button-light:hover {
+  background: var(--gold-light);
+  color: #171717;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .church-introduction-grid,
+  .church-beliefs-grid,
+  .church-life-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .church-introduction-content {
+    padding-top: 0;
+  }
+
+  .church-beliefs {
+    padding: 90px 0;
+  }
+
+  .church-vision-grid {
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 35px;
+  }
+
+  .church-leaders-heading {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .church-location-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+  .church-hero {
+    min-height: auto;
+  }
+
+  .church-hero-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .church-hero h1 {
+    font-size: clamp(3rem, 14vw, 4.5rem);
+    margin-top: 16px;
+  }
+
+  .church-hero-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .church-introduction-grid {
+    gap: 36px;
+  }
+
+  .church-introduction h2,
+  .church-life-preview h2 {
+    font-size: clamp(2.4rem, 11vw, 3.5rem);
+  }
+
+  .church-beliefs {
+    padding: 75px 0;
+  }
+
+  .church-beliefs-grid {
+    gap: 40px;
+  }
+
+  .church-beliefs-content h2 {
+    font-size: clamp(3rem, 14vw, 4.4rem);
+  }
+
+  .church-beliefs-content p {
+    font-size: 1rem;
+  }
+
+  .church-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .church-vision-number {
+    padding-top: 0;
+  }
+
+  .church-vision h2 {
+    font-size: clamp(2.5rem, 11vw, 3.8rem);
+  }
+
+  .church-life-preview {
+    padding: 80px 0;
+  }
+
+  .church-leaders-heading {
+    margin-bottom: 30px;
+  }
+
+  .church-leaders-heading h2 {
+    font-size: clamp(2.5rem, 11vw, 3.8rem);
+  }
+
+  .departments-scroll {
+    gap: 14px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .department-card {
+    flex-basis: 86vw;
+    min-height: 360px;
+    padding: 22px;
+  }
+
+  .department-card-header h3 {
+    font-size: 1.7rem;
+  }
+
+  .department-members {
+    gap: 12px;
+  }
+
+  .department-person strong {
+    font-size: 0.82rem;
+  }
+
+  /* NOUS TROUVER */
+
+  .church-location {
+    padding: 80px 0;
+  }
+
+  .church-location-header h2 {
+    font-size: clamp(2.6rem, 12vw, 4rem);
+  }
+
+  .church-location-grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+    margin-top: 50px;
+  }
+
+  .location-address {
+    font-size: 1.55rem;
+  }
+
+  .location-floor-note {
+    margin-top: 30px;
+  }
+
+  .location-service strong {
+    font-size: 1.45rem;
+  }
+
+  .church-location-actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 42px;
+  }
+
+  .church-location-actions .button {
+    width: 100%;
+  }
+
+  .location-map-link {
+    align-self: flex-end;
+  }
+
+  .church-invitation {
+    padding: 100px 0;
+  }
+
+  .church-invitation h2 {
+    font-size: clamp(3.1rem, 15vw, 5rem);
+  }
+
+  .church-invitation p:not(.eyebrow) {
+    font-size: 1rem;
+  }
+}
+
+/* =========================================================
+   RÉDUCTION DES ANIMATIONS
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .department-card,
+  .text-link,
+  .location-map-link {
+    transition: none;
+  }
+
+  .department-card:hover {
+    transform: none;
+  }
+
+  .text-link:hover {
+    gap: 12px;
+  }
+
+  .location-map-link:hover {
+    transform: none;
+  }
+}

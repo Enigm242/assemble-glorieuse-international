@@ -1,0 +1,190 @@
+.testimonials-page {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-main);
+  overflow: hidden;
+}
+
+.testimonials-opening {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-main);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.opening-stage {
+  width: min(1100px, calc(100% - 64px));
+  min-height: 300px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opening-phrase {
+  position: absolute;
+
+  width: 100%;
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-50%) translateX(-28px);
+
+  padding: 0 24px;
+
+  text-align: center;
+
+  font-size: clamp(2.8rem, 6vw, 6.8rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
+  font-weight: 500;
+
+  color: var(--text-main);
+
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+
+  transition:
+    opacity 700ms ease,
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.opening-phrase.is-visible {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.opening-phrase.is-hidden {
+  opacity: 0;
+  transform: translateY(-50%) translateX(28px);
+}
+
+.opening-phrase.handwriting {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+
+  animation:
+    handwritingReveal 1500ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    forwards;
+}
+
+.opening-link {
+  position: absolute;
+
+  left: 50%;
+  bottom: 13vh;
+
+  transform: translateX(-50%) translateY(12px);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--text-main);
+
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+
+  text-decoration: none;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+}
+
+.opening-link.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.opening-link span {
+  display: inline-block;
+
+  transition:
+    transform 220ms ease;
+}
+
+.opening-link:hover span {
+  transform: translateX(5px);
+}
+
+@keyframes handwritingReveal {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media (max-width: 760px) {
+
+  .opening-stage {
+    width: calc(100% - 32px);
+    min-height: 240px;
+  }
+
+  .opening-phrase {
+    padding: 0 10px;
+
+    font-size: clamp(2.3rem, 11vw, 4.2rem);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+
+    transform: translateY(-50%) translateX(-18px);
+  }
+
+  .opening-phrase.is-visible {
+    transform: translateY(-50%) translateX(0);
+  }
+
+  .opening-phrase.is-hidden {
+    transform: translateY(-50%) translateX(18px);
+  }
+
+  .opening-phrase.handwriting {
+    transform: translateY(-50%) translateX(0);
+  }
+
+  .opening-link {
+    bottom: 9vh;
+    width: calc(100% - 48px);
+
+    justify-content: center;
+
+    font-size: 0.74rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .opening-phrase,
+  .opening-link {
+    transition: none;
+  }
+
+  .opening-phrase.handwriting {
+    animation: none;
+  }
+}

@@ -1,0 +1,429 @@
+.contact-page {
+  background: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+.contact-hero {
+  padding: 150px 24px 120px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.contact-hero-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.contact-eyebrow,
+.contact-kicker {
+  margin: 0 0 20px;
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+.contact-hero h1 {
+  max-width: 850px;
+  margin: 0;
+  font-size: clamp(3.4rem, 8vw, 7.2rem);
+  line-height: 0.92;
+  font-weight: 400;
+  letter-spacing: -0.055em;
+}
+
+.contact-hero p {
+  max-width: 540px;
+  margin: 38px 0 0;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.contact-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 110px 24px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.contact-section-heading {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 55px;
+}
+
+.contact-section-heading > span {
+  color: var(--gold);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+}
+
+.contact-section-heading h2 {
+  max-width: 720px;
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.contact-section-heading .contact-kicker {
+  margin-bottom: 14px;
+}
+
+.secretariat-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding-left: 98px;
+}
+
+.secretariat-text p,
+.reception-intro p,
+.prayer-content > p {
+  max-width: 520px;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.secretariat-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-action {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 0;
+  color: var(--text-main);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-light);
+  transition:
+    color 250ms ease,
+    border-color 250ms ease;
+}
+
+.contact-action:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.contact-action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border: 1px solid var(--border-light);
+}
+
+.contact-action span:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.contact-action small {
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contact-action strong {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.contact-action-arrow {
+  margin-left: auto;
+  font-size: 1.2rem;
+}
+
+.reception-section {
+  max-width: none;
+  padding-left: max(24px, calc((100% - 1180px) / 2 + 24px));
+  padding-right: max(24px, calc((100% - 1180px) / 2 + 24px));
+}
+
+.reception-intro {
+  margin-left: 98px;
+  margin-bottom: 45px;
+}
+
+.reception-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-left: 98px;
+}
+
+.reception-card {
+  min-height: 360px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+}
+
+.reception-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--gold);
+}
+
+.reception-card-top span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.reception-card h3 {
+  max-width: 450px;
+  margin: 60px 0 20px;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.reception-time {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.reception-time span {
+  margin: 0 8px;
+  color: var(--gold);
+}
+
+.reception-button {
+  width: 100%;
+  margin-top: auto;
+  padding: 17px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--text-main);
+  font: inherit;
+  cursor: pointer;
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease;
+}
+
+.reception-button:hover {
+  background: var(--text-main);
+  color: var(--bg-main);
+  border-color: var(--text-main);
+}
+
+.prayer-content {
+  margin-left: 98px;
+  max-width: 650px;
+}
+
+.prayer-button {
+  width: fit-content;
+  margin-top: 35px;
+  padding: 16px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-main);
+  text-decoration: none;
+  border: 1px solid var(--border-light);
+  transition:
+    background-color 250ms ease,
+    color 250ms ease;
+}
+
+.prayer-button:hover {
+  background: var(--text-main);
+  color: var(--bg-main);
+}
+
+.reception-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.reception-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.reception-modal-content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 620px);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 45px;
+  background: var(--bg-main);
+  color: var(--text-main);
+  border: 1px solid var(--border-light);
+}
+
+.reception-modal-content h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.reception-modal-content > p {
+  margin: 22px 0 35px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.reception-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--text-main);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.reception-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.reception-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.reception-form input,
+.reception-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 16px;
+  border: 1px solid var(--border-light);
+  outline: none;
+  background: var(--bg-card);
+  color: var(--text-main);
+  font: inherit;
+  font-size: 0.95rem;
+}
+
+.reception-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.reception-form input:focus,
+.reception-form textarea:focus {
+  border-color: var(--gold);
+}
+
+.reception-submit {
+  padding: 17px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--text-main);
+  background: var(--text-main);
+  color: var(--bg-main);
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .contact-hero {
+    padding: 110px 20px 85px;
+  }
+
+  .contact-section {
+    padding: 80px 20px;
+  }
+
+  .contact-section-heading {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .secretariat-content,
+  .reception-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .secretariat-content,
+  .reception-intro,
+  .reception-grid,
+  .prayer-content {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .secretariat-content {
+    gap: 45px;
+  }
+
+  .reception-card {
+    min-height: 310px;
+    padding: 25px;
+  }
+
+  .reception-card h3 {
+    margin-top: 45px;
+  }
+
+  .reception-modal-content {
+    padding: 35px 22px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .contact-hero p {
+    margin-top: 28px;
+    font-size: 0.95rem;
+  }
+
+  .contact-section-heading h2 {
+    font-size: 2.15rem;
+  }
+
+  .reception-card h3 {
+    font-size: 1.8rem;
+  }
+}

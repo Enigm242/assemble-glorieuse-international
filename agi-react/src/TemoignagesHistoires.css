@@ -1,0 +1,536 @@
+.stories-page {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.stories-intro {
+  padding: 120px 0 80px;
+}
+
+.stories-intro-inner {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.stories-intro .eyebrow {
+  margin: 0 0 18px;
+  color: var(--gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.stories-intro h1 {
+  max-width: 760px;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.98;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.stories-intro-text {
+  max-width: 540px;
+  margin: 28px 0 0;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   ZONE PRINCIPALE
+========================================================= */
+
+.stories-section {
+  padding: 40px 0 110px;
+}
+
+.stories-layout {
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr) 290px;
+  gap: 52px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   RESPONSABLE
+========================================================= */
+
+.stories-responsible {
+  position: sticky;
+  top: 120px;
+  padding-top: 8px;
+}
+
+.responsible-photo {
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+
+  color: var(--text-muted);
+  font-size: 0.48rem;
+  letter-spacing: 0.12em;
+}
+
+.responsible-info {
+  margin-top: 16px;
+}
+
+.responsible-label {
+  margin: 0 0 8px;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.responsible-info h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.responsible-role {
+  margin: 5px 0 0;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.responsible-note {
+  max-width: 180px;
+  margin: 16px 0 0;
+  color: var(--text-muted);
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  font-style: italic;
+}
+
+
+/* =========================================================
+   TÉMOIGNAGES
+========================================================= */
+
+.stories-content {
+  min-width: 0;
+}
+
+.stories-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.stories-content-header p {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.stories-content-header span {
+  color: var(--text-muted);
+  font-size: 0.68rem;
+}
+
+.stories-empty {
+  padding: 55px 0 20px;
+}
+
+.stories-empty-label {
+  margin: 0 0 18px;
+  color: var(--gold);
+  font-size: 0.68rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.stories-empty h2 {
+  max-width: 620px;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 3.5vw, 3.6rem);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.stories-empty > p:last-child {
+  max-width: 540px;
+  margin: 24px 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   À VOTRE TOUR
+========================================================= */
+
+.stories-your-turn {
+  padding: 30px 0 0 30px;
+
+  border-left: 1px solid var(--border-light);
+
+  transition:
+    transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 280ms ease;
+}
+
+.stories-your-turn:hover {
+  transform: translateX(7px);
+  border-color: var(--gold);
+}
+
+.your-turn-label {
+  margin: 0 0 18px;
+
+  color: var(--gold);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.stories-your-turn h2 {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.your-turn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 28px;
+
+  color: var(--text-main);
+  font-size: 0.76rem;
+  line-height: 1.4;
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 7px;
+
+  transition:
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.your-turn-link span {
+  transition: transform 180ms ease;
+}
+
+.your-turn-link:hover {
+  border-color: var(--gold);
+}
+
+.your-turn-link:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   CONCLUSION
+========================================================= */
+
+.stories-encouragement {
+  padding: 85px 24px 100px;
+
+  border-top: 1px solid var(--border-light);
+
+  text-align: center;
+}
+
+.stories-encouragement-inner {
+  width: min(850px, 100%);
+  margin: 0 auto;
+}
+
+.stories-encouragement-label {
+  margin: 0 0 16px;
+
+  color: var(--gold);
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.stories-encouragement h2 {
+  max-width: 760px;
+  margin: 0 auto;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+
+/* =========================================================
+   BOUTONS
+========================================================= */
+
+.stories-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 34px;
+}
+
+.stories-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+  padding: 0 22px;
+
+  border-radius: 999px;
+
+  font-size: 0.74rem;
+  text-decoration: none;
+
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+}
+
+.stories-action:hover {
+  transform: translateY(-2px);
+}
+
+.stories-action-primary {
+  background: var(--text-main);
+  color: var(--bg-main);
+  border: 1px solid var(--text-main);
+}
+
+.stories-action-secondary {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-light);
+}
+
+.stories-action-secondary:hover {
+  background: var(--bg-secondary);
+}
+
+
+/* =========================================================
+   TABLETTE
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .stories-layout {
+    grid-template-columns: 170px minmax(0, 1fr) 250px;
+    gap: 32px;
+  }
+
+  .stories-your-turn {
+    padding-left: 24px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .stories-intro {
+    padding: 85px 0 55px;
+  }
+
+  .stories-intro-inner {
+    width: min(100% - 32px, 680px);
+  }
+
+  .stories-intro h1 {
+    font-size: clamp(2.8rem, 13vw, 4.2rem);
+  }
+
+  .stories-intro-text {
+    margin-top: 20px;
+    font-size: 0.92rem;
+  }
+
+
+  /* ZONE PRINCIPALE */
+
+  .stories-section {
+    padding: 20px 0 75px;
+  }
+
+  .stories-layout {
+    width: calc(100% - 32px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+
+  /* RESPONSABLE */
+
+  .stories-responsible {
+    position: relative;
+    top: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .responsible-photo {
+    flex: 0 0 56px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .responsible-info {
+    margin-top: 0;
+  }
+
+  .responsible-label {
+    margin-bottom: 3px;
+    font-size: 0.62rem;
+  }
+
+  .responsible-info h2 {
+    font-size: 1rem;
+  }
+
+  .responsible-role {
+    margin-top: 2px;
+    font-size: 0.68rem;
+  }
+
+  .responsible-note {
+    max-width: none;
+    margin-top: 4px;
+    font-size: 0.72rem;
+  }
+
+
+  /* TÉMOIGNAGES */
+
+  .stories-content {
+    margin-top: 28px;
+  }
+
+  .stories-content-header {
+    padding-bottom: 14px;
+  }
+
+  .stories-content-header span {
+    font-size: 0.62rem;
+  }
+
+  .stories-empty {
+    padding: 40px 0 10px;
+  }
+
+  .stories-empty h2 {
+    font-size: clamp(1.9rem, 9vw, 2.8rem);
+  }
+
+  .stories-empty > p:last-child {
+    margin-top: 18px;
+    font-size: 0.9rem;
+  }
+
+
+  /* À VOTRE TOUR */
+
+  .stories-your-turn {
+    width: 100%;
+
+    margin-top: 38px;
+    padding: 30px 0 0;
+
+    border-left: 0;
+    border-top: 1px solid var(--border-light);
+  }
+
+  .stories-your-turn:hover {
+    transform: translateY(-2px);
+  }
+
+  .stories-your-turn h2 {
+    font-size: 1.55rem;
+  }
+
+  .your-turn-link {
+    margin-top: 22px;
+  }
+
+
+  /* CONCLUSION */
+
+  .stories-encouragement {
+    padding: 65px 20px 75px;
+  }
+
+  .stories-encouragement h2 {
+    font-size: clamp(1.9rem, 9vw, 2.8rem);
+  }
+
+
+  /* BOUTONS */
+
+  .stories-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .stories-action {
+    width: min(100%, 300px);
+  }
+
+}
